@@ -1,12 +1,56 @@
 .header {
-  background-color: #2c2c2c;
+  box-sizing: border-box;
+  padding-top: 20px;
+  height: 100vh;
+  background-color: $header-footer-background;
+  border-radius: 0 0 30px 30px;
+
+  &__top {
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 32px;
+  }
+
+  &__menu-opener {
+    margin-right: auto;
+    background-image: url(../images/Menu.svg);
+    width: 24px;
+    height: 24px;
+    @include imageCenter;
+  }
+
+  &__apply {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: $header-footer-text-color;
+  }
 
   &__title {
-    font-weight: 600;
+    margin-bottom: 32px;
+
+    @extend %main-title;
     font-size: 52px;
     line-height: 120%;
     letter-spacing: -2px;
 
-    color: #fff;
+    color: $header-footer-text-color;
+  }
+  &__slogan {
+    margin-bottom: 72px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: $header-footer-text-color;
   }
 }

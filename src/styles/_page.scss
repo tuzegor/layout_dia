@@ -1,9 +1,9 @@
 .page {
   scroll-behavior: smooth;
-}
 
-.page__body {
-  background-color: $page-background;
-  color: $main-text-color;
-  margin: 0;
+  &__body {
+    background-color: $page-background;
+    color: $main-text-color;
+    margin: 0;
+  }
 }
