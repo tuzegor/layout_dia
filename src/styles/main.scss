@@ -1,6 +1,5 @@
 @import "utils";
 @import "fonts";
-
-body {
-  background: $page-background;
-}
+@import "common";
+@import "page";
+@import "loyout/header";
