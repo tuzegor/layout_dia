@@ -1,0 +1,31 @@
+.button {
+  box-sizing: border-box;
+  @extend %display-flex;
+
+  height: 50px;
+  width: 100%;
+  max-width: 264px;
+
+  border: 3px solid $accent-color;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: $second-font;
+  font-weight: inherit;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #fff;
+  background-color: $accent-color;
+  transition: color linear 0.3s, background-color linear 0.3s;
+
+  &:hover {
+    color: $accent-color;
+    background-color: #fff;
+  }
+
+  &:active {
+    color: $header-footer-text-color;
+    background-color: #111;
+  }
+}

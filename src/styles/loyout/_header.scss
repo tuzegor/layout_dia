@@ -44,7 +44,9 @@
 
     color: $header-footer-text-color;
   }
+
   &__slogan {
+    max-width: 362px;
     margin-bottom: 72px;
 
     font-weight: 400;
@@ -52,5 +54,9 @@
     line-height: 150%;
 
     color: $header-footer-text-color;
+  }
+
+  &__button {
+    margin: 0 auto;
   }
 }
