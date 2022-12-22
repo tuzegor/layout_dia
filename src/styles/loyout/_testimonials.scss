@@ -1,0 +1,167 @@
+.testimonials {
+  &__title {
+    text-align: start;
+  }
+
+  &__card {
+    padding: 32px 15px;
+    background-color: #fff;
+    box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+    border-radius: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__card-wraper {
+    width: 196px;
+    margin: 0 auto;
+  }
+
+  &__photo-wraper {
+    position: relative;
+    height: 196px;
+    margin-bottom: 24px;
+    @extend %display-flex;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 109px;
+      height: 44px;
+      background-color: $accent-color;
+      border-radius: 12px;
+    }
+
+    &::before {
+      transform: rotate(-60deg) translate(10px, -50px);
+    }
+
+    &::after {
+      transform: rotate(-60deg) translate(-10px, 50px);
+    }
+  }
+
+  &__photo {
+    z-index: 10;
+    width: 109px;
+    height: 109px;
+    border-radius: 50%;
+  }
+
+  &__quotes-img {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    text-align: center;
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  &__name {
+    margin-bottom: 4px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: $secondary-text-color;
+  }
+
+  &__company {
+    text-align: center;
+  }
+}
+
+@include onTablet {
+  .testimonials {
+    &__title {
+      width: 200px;
+    }
+
+    &__card-wraper {
+      width: 362px;
+    }
+
+    &__photo-wraper {
+      height: 250px;
+
+      &::before,
+      &::after {
+        width: 139px;
+        height: 56px;
+      }
+      &::before {
+        transform: rotate(-60deg) translate(18px, -66px);
+      }
+
+      &::after {
+        transform: rotate(-60deg) translate(-18px, 66px);
+      }
+    }
+
+    &__photo {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+@include onSmallDesktop {
+  .testimonials {
+    &__list {
+      display: flex;
+    }
+
+    &__card {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .testimonials {
+    &__card-wraper {
+      width: 196px;
+    }
+
+    &__photo-wraper {
+      height: 196px;
+
+      &::before,
+      &::after {
+        width: 109px;
+        height: 44px;
+      }
+
+      &::before {
+        transform: rotate(-60deg) translate(10px, -50px);
+      }
+
+      &::after {
+        transform: rotate(-60deg) translate(-10px, 50px);
+      }
+    }
+
+    &__photo {
+      width: 109px;
+      height: 109px;
+    }
+  }
+}
+
+@include onDesktop {
+  .testimonials__card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
