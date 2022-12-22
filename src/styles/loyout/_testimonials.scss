@@ -14,12 +14,12 @@
     }
   }
 
-  &__card-wraper {
+  &__card-wrapper {
     width: 196px;
     margin: 0 auto;
   }
 
-  &__photo-wraper {
+  &__photo-wrapper {
     position: relative;
     height: 196px;
     margin-bottom: 24px;
@@ -85,11 +85,11 @@
       width: 200px;
     }
 
-    &__card-wraper {
+    &__card-wrapper {
       width: 362px;
     }
 
-    &__photo-wraper {
+    &__photo-wrapper {
       height: 250px;
 
       &::before,
@@ -131,11 +131,11 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
   .testimonials {
-    &__card-wraper {
+    &__card-wrapper {
       width: 196px;
     }
 
-    &__photo-wraper {
+    &__photo-wrapper {
       height: 196px;
 
       &::before,

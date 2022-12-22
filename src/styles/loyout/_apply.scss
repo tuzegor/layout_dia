@@ -1,0 +1,52 @@
+.apply {
+  padding: 72px 0;
+  background-color: #fff;
+
+  &__title {
+    font-size: 44px;
+    line-height: 120%;
+  }
+
+  &__text {
+    margin-bottom: 56px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 150%;
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+@include onTablet {
+  .apply {
+    padding: 200px 0;
+    margin-bottom: 0;
+    background-image: url(../images/Shapes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+
+    &__title {
+      font-size: 52px;
+    }
+
+    &__text {
+      margin: 0 auto 64px;
+      max-width: 754px;
+      font-size: 24px;
+    }
+  }
+}
+
+@include onSmallDesktop {
+  .apply {
+    background-size: 127%;
+  }
+}
+
+@include onDesktop {
+  .apply {
+    background-size: contain;
+  }
+}
