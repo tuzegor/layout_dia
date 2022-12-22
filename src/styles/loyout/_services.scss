@@ -1,0 +1,169 @@
+.services {
+  &__title {
+    text-align: start;
+    line-height: 130%;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__top {
+    margin-bottom: 48px;
+    max-width: 280px;
+  }
+}
+
+.process {
+  &__card {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 280px;
+    height: 264px;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+    border-radius: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__number {
+    margin-bottom: 23px;
+    padding: 2px 0;
+    width: 46px;
+    text-align: center;
+    font-family: $second-font;
+    font-weight: inherit;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #2060f6;
+
+    background-color: $page-background;
+    border-radius: 23px;
+  }
+
+  &__list {
+    margin-bottom: 27px;
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-family: $second-font;
+    font-size: 15px;
+    line-height: 22px;
+    color: $secondary-text-color;
+
+    &::before {
+      content: "";
+      display: block;
+      margin-right: 16px;
+      width: 40px;
+      height: 40px;
+      background-color: $accent-color;
+      border-radius: 50%;
+
+      background-image: url(../images/Vector.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px;
+      transition: transform 0.3s;
+    }
+    &:hover::before {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@include onTablet {
+  .services__list {
+    max-width: 558px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .process {
+    &__card {
+      width: 264px;
+
+      &--transform {
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@include onSmallDesktop {
+  .services__container {
+    display: flex;
+  }
+
+  .services {
+    padding-top: 148px;
+
+    &__top {
+      max-width: 294px;
+      margin-right: auto;
+    }
+
+    &__list {
+      margin: 0;
+      width: 448px;
+    }
+  }
+
+  .process__card {
+    width: 214px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include onDesktop {
+  .services {
+    &__top {
+      max-width: 364px;
+    }
+
+    &__list {
+      width: 558px;
+    }
+  }
+
+  .process__card {
+    width: 264px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
