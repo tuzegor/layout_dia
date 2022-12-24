@@ -1,0 +1,21 @@
+.navigation {
+  &__link {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    @include hover(color, $accent-color);
+  }
+}
+
+@include onTablet {
+  .navigation {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

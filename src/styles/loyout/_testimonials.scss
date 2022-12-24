@@ -161,7 +161,15 @@
 }
 
 @include onDesktop {
-  .testimonials__card:not(:last-child) {
-    margin-right: 30px;
+  .testimonials {
+    &__card {
+      padding: 56px 32px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &-wrapper {
+        width: auto;
+      }
+    }
   }
 }
