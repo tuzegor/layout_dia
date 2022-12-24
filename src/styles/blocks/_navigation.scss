@@ -2,11 +2,10 @@
   &__link {
     font-family: $second-font;
     font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 3px;
+    letter-spacing: $main-letter-spacing;
     text-transform: uppercase;
     cursor: pointer;
-    color: #fff;
+    color: $white-color;
     @include hover(color, $accent-color);
   }
 }

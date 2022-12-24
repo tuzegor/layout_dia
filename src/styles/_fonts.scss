@@ -2,9 +2,12 @@
 
 $main-font: "Open Sans", sans-serif;
 $second-font: "Poppins", sans-serif;
+$main-letter-spacing: 3px;
+$main-line-height: 150%;
 
 html {
   font-family: $main-font;
   font-weight: 600;
   font-style: normal;
+  font-size: 13px;
 }

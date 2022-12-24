@@ -7,7 +7,7 @@
   &__text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
+    line-height: $main-line-height;
   }
 
   &__top {
@@ -23,7 +23,7 @@
     max-width: 280px;
     height: 264px;
     padding: 32px;
-    background: #fff;
+    background: $white-color;
     box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
     border-radius: 16px;
 
@@ -39,9 +39,7 @@
     text-align: center;
     font-family: $second-font;
     font-weight: inherit;
-    font-size: 13px;
     line-height: 20px;
-    text-transform: uppercase;
 
     color: #2060f6;
 
@@ -51,8 +49,7 @@
 
   &__list {
     margin-bottom: 27px;
-    font-size: 13px;
-    line-height: 150%;
+    line-height: $main-line-height;
   }
 
   &__link {

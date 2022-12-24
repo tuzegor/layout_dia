@@ -15,13 +15,13 @@
   font-size: 15px;
   line-height: 22px;
 
-  color: #fff;
+  color: $white-color;
   background-color: $accent-color;
   transition: color linear 0.3s, background-color linear 0.3s;
 
   &:hover {
     color: $accent-color;
-    background-color: #fff;
+    background-color: $white-color;
   }
 
   &:active {

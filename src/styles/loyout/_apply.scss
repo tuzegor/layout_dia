@@ -1,6 +1,6 @@
 .apply {
   padding: 72px 0;
-  background-color: #fff;
+  background-color: $white-color;
 
   &__title {
     font-size: 44px;
@@ -11,7 +11,7 @@
     margin-bottom: 56px;
     text-align: center;
     font-size: 22px;
-    line-height: 150%;
+    line-height: $main-line-height;
   }
   &__button {
     margin: 0 auto;

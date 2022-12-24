@@ -10,10 +10,7 @@
     color: $header-footer-text-color;
   }
 
-  &__contact-form {
-    margin-bottom: 80px;
-  }
-
+  &__contact-form,
   &__contacts {
     margin-bottom: 80px;
   }
@@ -37,11 +34,11 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
-    color: #fff;
+    color: $white-color;
 
     outline: none;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white-color;
     background-color: transparent;
     transition: all 0.3s;
 
@@ -78,37 +75,11 @@
 
   &__link {
     font-size: 24px;
-    line-height: 150%;
+    line-height: $main-line-height;
     color: $header-footer-text-color;
 
     @include hover(color, $accent-color);
   }
-}
-
-.social-media {
-  display: flex;
-
-  &__item:not(:last-child()) {
-    margin-right: 32px;
-  }
-  
-  &__icon {
-    fill: $header-footer-text-color;
-    transition: fill 0.3s;
-  }
-  
-  &__link {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-
-    &:hover .social-media__icon {
-      fill: $accent-color;
-    }
-  }
-
 }
 
 .footer__navigation .navigation__item:not(:last-child) {
