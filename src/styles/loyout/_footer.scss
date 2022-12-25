@@ -19,6 +19,10 @@
     display: inline-block;
     margin-bottom: 48px;
   }
+
+  &__navigation .navigation__link {
+    @include hover(color, $accent-color);
+  }
 }
 
 .contact-form {

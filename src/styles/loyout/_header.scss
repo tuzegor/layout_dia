@@ -23,13 +23,25 @@
     @include imageCenter;
   }
 
-  &__apply {
-    font-family: $second-font;
-    font-weight: 700;
-    letter-spacing: $main-letter-spacing;
-    text-transform: uppercase;
+  &__navigation {
+    display: none;
+  }
 
-    color: $header-footer-text-color;
+  &__navigation--link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: -8px;
+    }
+
+    &:hover::after {
+      background-color: $accent-color;
+    }
   }
 
   &__title {
@@ -64,6 +76,29 @@
     &__title {
       font-size: 64px;
       line-height: 106%;
+    }
+  }
+}
+
+@include onSmallDesktop {
+  .header {
+    padding-top: 48px;
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__menu-opener {
+      display: none;
+    }
+
+    &__navigation {
+      display: block;
+
+      .navigation__item:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }

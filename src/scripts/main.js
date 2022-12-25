@@ -1,8 +1,8 @@
 'use strict';
 
-const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener("submit", (event) => {
+contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const userData = {

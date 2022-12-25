@@ -5,8 +5,7 @@
     letter-spacing: $main-letter-spacing;
     text-transform: uppercase;
     cursor: pointer;
-    color: $white-color;
-    @include hover(color, $accent-color);
+    color: $header-footer-text-color;
   }
 }
 
