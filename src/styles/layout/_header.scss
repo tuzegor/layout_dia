@@ -17,10 +17,6 @@
 
   &__menu-opener {
     margin-right: auto;
-    background-image: url(../images/Menu.svg);
-    width: 24px;
-    height: 24px;
-    @include imageCenter;
   }
 
   &__navigation {

@@ -6,9 +6,9 @@
     color: $main-text-color;
     margin: 0;
 
-    // &--with-menu {
-    //   overflow: hidden;
-    // }
+    &--with-menu {
+      overflow: hidden;
+    }
   }
 }
 

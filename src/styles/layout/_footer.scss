@@ -85,6 +85,14 @@
   }
 }
 
+.social-media {
+  display: flex;
+
+  &__item:not(:last-child()) {
+    margin-right: 32px;
+  }
+}
+
 .footer__navigation .navigation__item:not(:last-child) {
   margin-bottom: 24px;
 }
