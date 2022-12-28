@@ -6,15 +6,13 @@
   }
 
   &__icon {
+    display: block;
     fill: $header-footer-text-color;
     transition: fill 0.3s;
   }
 
   &__link {
     @extend %display-flex;
-    width: 32px;
-    height: 32px;
-
     &:hover .social-media__icon {
       fill: $accent-color;
     }
